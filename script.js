@@ -74,7 +74,7 @@
 // }
 
 
-let num = 50;
+// let num = 50;
 
 // while (num <= 55) {
 //     console.log(num);
@@ -115,6 +115,17 @@ let num = 50;
 //
 // console.log(result);
 
+
+
+
+
+
+
+
+
+
+
+
 // first: for (let i = 0; i < 3; i++) {
 //     console.log(`first level: ${i}`);
 //     for (let j = 0; j < 3; j++) {
@@ -125,6 +136,11 @@ let num = 50;
 //         }
 //     }
 // }
+
+
+
+
+
 
 
 // // Место для первой задачи
