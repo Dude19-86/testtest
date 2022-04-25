@@ -1,7 +1,7 @@
 "use strict"
-
+//
 // const numberOfFilms = +prompt('how many films have you already watched?', '');
-
+//
 // const personalMovieDB = {
 //     count: numberOfFilms,
 //     movies: {},
@@ -9,13 +9,30 @@
 //     genres: [],
 //     privat: false,
 // };
-// const a = prompt('what was the last movie you watched?', ''),
-//     b = +prompt('his score?', ''),
-//     c = prompt('what was the last movie you watched?', ''),
-//     d = +prompt('his score?', '');
-
-// personalMovieDB['movies'][a] = b;
-// personalMovieDB['movies'][c] = d;
+//
+//
+// for (let i = 0; i < 2; i++) {
+//     const a = prompt('what was the last movie you watched?', '');
+//     const b = prompt('his score?', '');
+//     personalMovieDB.movies[a] = b;
+//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//         console.log('done');
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+// }
+//
+// if (personalMovieDB.count < 10) {
+//     console.log('просмотрено мало фильмов')
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//     console.log('вы классический пользователь')
+// } else if (personalMovieDB.count >= 30) {
+//     console.log('вы киноман');
+// } else {
+//     console.log('произошла ошибка');
+// }
+//
 // console.log(personalMovieDB);
 
 // const num = 100;
@@ -116,16 +133,6 @@
 // console.log(result);
 
 
-
-
-
-
-
-
-
-
-
-
 // first: for (let i = 0; i < 3; i++) {
 //     console.log(`first level: ${i}`);
 //     for (let j = 0; j < 3; j++) {
@@ -136,11 +143,6 @@
 //         }
 //     }
 // }
-
-
-
-
-
 
 
 // // Место для первой задачи
@@ -304,4 +306,49 @@
 // }
 //
 // console.log(result);
+
+
+// function-----------------------------------------
+
+
+// let num = 20;
+//
+// function showFirstMessage(text) {
+//     console.log(text);
+//     console.log(num);
+// }
+//
+// showFirstMessage('hello world!');
+// console.log(num);
+//
+// function calc(a, b) {
+//     return a + b;
+// }
+//
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(5, 6));
+//
+// function red() {
+//     return 50;
+// }
+// const anotherNum = red();
+// console.log(anotherNum);
+//
+// const logger = function() {
+//     console.log('hello');
+// };
+//
+// logger();
+//
+// const calcal = (a, b) => {
+//     return a + b;
+// };
+//
+// console.log(calcal(4,6))
+
+function convert(amount) {
+    console.log(28 * amount)
+}
+convert(7)
 
