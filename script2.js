@@ -807,13 +807,11 @@
 
 // console.dir([1,2,3])
 
-const soldier = {
-    health: 400,
-    armor: 100,
-    sayHello() {
-        console.log('Hello');
-    }
-};
+// const soldier = {
+//     health: 400, armor: 100, sayHello() {
+//         console.log('Hello');
+//     }
+// };
 
 // const john = {
 //     health: 100
@@ -976,37 +974,158 @@ const soldier = {
 // console.log(typeof (!!'4'));
 
 
-let number = 5;
-debugger
+// let number = 5;
+// debugger
+//
+// function logNumber() {
+//     let number = 4;
+//     debugger
+//     console.log(number);
+// }
+//
+// number = 6;
+//
+// logNumber();
+// debugger
+//
+// function createCounter() {
+//     let counter = 0;
+//
+//     return function () {
+//         counter++;
+//         return counter;
+//     };
+// }
+//
+// const increment = createCounter();
+// const c1 = increment();
+// const c2 = increment();
+// const c3 = increment();
+// const c4 = increment();
+// const c5 = increment();
+//
+//
+// console.log(c1, c2, c3, c4, c5);
 
-function logNumber() {
-    let number = 4;
-    debugger
-    console.log(number);
-}
 
-number = 6;
-
-logNumber();
-debugger
-
-function createCounter() {
-    let counter = 0;
-
-    return function () {
-        counter++;
-        return counter;
-    };
-}
-
-const increment = createCounter();
-const c1 = increment();
-const c2 = increment();
-const c3 = increment();
-const c4 = increment();
-const c5 = increment();
+// function foo(a,b) {
+//     const [hhhh] = a;
+//     const {eng} = b;
+//
+//     return `${hhhh} ${eng}`;
+// }
+//
+// const result = foo(['priva','Hello', 'Привет'], {ru: 'Мир', eng: 'World'})
+//
+// console.log(result);
 
 
-console.log(c1, c2, c3, c4, c5);
+// let x = 5;
+// alert(++x);
+
+// console.log([] + false - null + true);
+
+
+// let y = 1;
+// let  x = y = 2;
+// alert(x);
+
+
+// console.log([] + 1 + 2);
+
+// alert('1'[0]);
+// console.log('1'[0]);
+
+// console.log(2 && 1 && null && 0 && undefined);
+
+// let a = 2, b = 3;
+// console.log(!!(a && b), (a && b));
+
+// console.log(null || 2&&3 || 4);
+
+
+// let a = [1,2,3];
+// let b = [1,2,3];
+// console.log(a === b);
+
+// alert(+'Infinity');
+
+// console.log('Ёжик' > 'яблоко');
+
+// console.log(0 || '' || 2 || undefined || true || false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const restorantData = {
+//     menu: [
+//         {
+//             name: 'Salad Caesar',
+//             price: '14$'
+//         },
+//         {
+//             name: 'Pizza Diavola',
+//             price: '9$'
+//         },
+//         {
+//             name: 'Beefsteak',
+//             price: '17$'
+//         },
+//         {
+//             name: 'Napoleon',
+//             price: '7$'
+//         }
+//     ],
+//     waitors: [
+//         {name: 'Alice', age: 22}, {name: 'John', age: 24}
+//     ],
+//     averageLunchPrice: '20$',
+//     openNow: false
+// };
+// // console.log(restorantData.openNow)
+// // console.log(restorantData.menu[0].price.slice(0, -1))
+// // console.log(restorantData.menu[1].price.slice(0, -1))
+//
+// function isOpen(prop) {
+//     let answer = '';
+//     prop ? answer = 'Закрыто' : answer = 'Открыто';
+//
+//     return answer;
+// }
+//
+// // console.log(isOpen(restorantData.openNow))
+//
+// function isAverageLunchPriceTrue(fDish, sDish, average) {
+//     if (+fDish.price.slice(0, -1) + (+sDish.price.slice(0, -1)) < +average.slice(0, -1)) {
+//         // console.log(+fDish.price.slice(0, -1) + +sDish.price.slice(0, -1));
+//         return 'Цена ниже средней';
+//     } else {
+//         // console.log(+fDish.price.slice(0, -1) + +sDish.price.slice(0, -1));
+//         return 'Цена выше средней';
+//     }
+//
+// }
+//
+// console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
+//
+// function transferWaitors(data) {
+//     const copy = Object.assign({}, data);
+//
+//     copy.waitors = [{name: 'Mike', age: 32}];
+//     return copy;
+// }
+//
+// console.log(transferWaitors(restorantData));
 
 
