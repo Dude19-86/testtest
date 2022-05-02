@@ -807,21 +807,21 @@
 
 // console.dir([1,2,3])
 
-// const soldier = {
-//     health: 400,
-//     armor: 100,
-//     sayHello: function () {
-//         console.log('Hello');
-//     }
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello() {
+        console.log('Hello');
+    }
+};
+
+// const john = {
+//     health: 100
 // };
-//
-// // const john = {
-// //     health: 100
-// // };
 // const john = Object.create(soldier);
 //
-// // john._proto_ = soldier;
-//
+// john.__proto__ = soldier;
+
 // Object.setPrototypeOf(john,soldier);
 // console.log(john.armor);
 // john.sayHello();
@@ -876,24 +876,137 @@
 // console.log(isBudgetEnough(shoppingMallData));
 
 
-const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'ff' ];
+//
+// function sortStudentsByGroups(arr) {
+//     arr.sort()
+//     let resArr = [];
+//     let rest = [];
+//     let a = [];
+//     let b = [];
+//     let c = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i < 3) {
+//             a.push(arr[i]);
+//         } else if (i < 6) {
+//             b.push(arr[i]);
+//         } else if (i < 9) {
+//             c.push(arr[i]);
+//         } else {
+//             rest.push(arr[i]);
+//         }
+//     }
+//     if (rest.length === 0) {
+//         rest.push('-');
+//     }
+//     resArr.push(a, b, c, `Оставшиеся студенты: ${rest.join(', ')}`);
+//
+//     // console.log(rest);
+//     return resArr;
+// }
+//
+// console.log(sortStudentsByGroups(students));
 
-function sortStudentsByGroups(arr) {
-    arr.sort()
-    let newArray = [];
-    for (let i = 0; i < arr.length; i += 3) {
-        newArray.push([arr[i], arr[i + 1], arr[i + 2]]);
-    }
-    let last = newArray[newArray.length - 1][0];
-    console.log(last);
-    newArray[newArray.length - 1].pop();
-    console.log(newArray)
-    // if (newArray[newArray.length - 1] < 3){
-    //
-    // }
-    // newArray[newArray.length - 1].push('hhh')
-    return newArray;
-    // return arr.sort().map((e, i) => e.push(i, i + 1, i + 2));
+// function sortStudentsByGroups(arr) {
+//     arr.sort()
+//     let resArr = [];
+//     let rest = [];
+//     let a = [];
+//     let b = [];
+//     let c = [];
+//     for (let i = 0; i < arr.length; i += 3) {
+//         // console.log(i)
+//         resArr.push([arr[i], arr[i + 1], arr[i + 2]])
+//     }
+//     console.log(resArr[3])
+//     if (resArr[3] === null /* resArr[3].includes(undefined)*/) {
+//          rest.push(resArr[3])
+//     } else {
+//         rest.push(resArr[3])
+//     }
+//     resArr.pop()
+//     a = rest.flat()
+//
+//     console.log(a);
+//     if (a.length === 0) {
+//         a.push('-');
+//     }
+//     resArr.push(/*a, b, c,*/ `Оставшиеся студенты: ${a.join(', ')}`);
+//
+//     // console.log(rest);
+//     return resArr;
+// }
+
+// console.log(sortStudentsByGroups(students));
+
+
+// console.log(typeof String(null));
+// console.log(String(4));
+// console.log(typeof String(4 + ' '));
+//
+// const num = 5;
+//
+// console.log('http://vk.com/catalog' + num);
+//
+// const fontSize = 26 + 'px';
+
+// to number
+
+// console.log(typeof Number('4'));
+//
+// const t = +'5'
+//
+// console.log(t)
+//
+// console.log(typeof parseInt('15px', 10));
+
+// let answer = prompt('hello', '');
+
+// to boolean
+
+// let switcher = null;
+// switcher = 1;
+// if (switcher) {
+//     console.log('working...');
+// } else {
+//     console.log('not')
+// }
+//
+// console.log(typeof Boolean('4'));
+// console.log(typeof (!!'4'));
+
+
+let number = 5;
+debugger
+
+function logNumber() {
+    let number = 4;
+    debugger
+    console.log(number);
 }
 
-console.log(sortStudentsByGroups(students));
+number = 6;
+
+logNumber();
+debugger
+
+function createCounter() {
+    let counter = 0;
+
+    return function () {
+        counter++;
+        return counter;
+    };
+}
+
+const increment = createCounter();
+const c1 = increment();
+const c2 = increment();
+const c3 = increment();
+const c4 = increment();
+const c5 = increment();
+
+
+console.log(c1, c2, c3, c4, c5);
+
+
